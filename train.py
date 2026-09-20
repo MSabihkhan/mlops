@@ -8,6 +8,9 @@ from sklearn.linear_model import LogisticRegression
 # Load dataset
 df = pd.read_csv("data/Titanic.csv")
 
+
+
+print("Changes made to the dataset and code")
 # Fill missing values
 df["Age"] = df["Age"].fillna(df["Age"].median())
 df["Embarked"] = df["Embarked"].fillna(df["Embarked"].mode()[0])
